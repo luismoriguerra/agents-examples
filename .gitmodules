@@ -1,0 +1,3 @@
+[submodule "git_subprojects/mcp-server-browserbase"]
+	path = git_subprojects/mcp-server-browserbase
+	url = https://github.com/browserbase/mcp-server-browserbase.git
