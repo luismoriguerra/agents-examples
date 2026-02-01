@@ -9,4 +9,9 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "anthropic>=0.77.0",
     "openai",
+    "chromadb>=1.4.1",
+    "pandas>=3.0.0",
+    "pylance>=1.0.4",
+    "ddgs>=9.10.0",
+    "httpx>=0.28.1",
 ]
