@@ -4,3 +4,9 @@
 [submodule "git_subprojects/ag-ui"]
 	path = git_subprojects/ag-ui
 	url = https://github.com/ag-ui-protocol/ag-ui.git
+[submodule "git_subprojects/vercel-agno-integration"]
+	path = git_subprojects/vercel-agno-integration
+	url = https://github.com/gauravdhiman/vercel-agno-integration
+[submodule "git_subprojects/agentos-railway-template"]
+	path = git_subprojects/agentos-railway-template
+	url = https://github.com/agno-agi/agentos-railway-template
