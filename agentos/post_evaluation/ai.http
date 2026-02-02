@@ -1,0 +1,16 @@
+# curl -X POST http://localhost:7777/agents/support-agent/runs \
+#   -F "message=How do I reset my password?" \
+#   -F "stream=false"
+
+
+@baseUrl = http://localhost:7777
+
+### 1. Send a request
+POST {{baseUrl}}/agents/support-agent/runs
+Content-Type: application/x-www-form-urlencoded
+
+message=How do I reset my password?
+stream=false
+
+
+###

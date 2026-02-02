@@ -1,0 +1,16 @@
+@baseUrl = http://localhost:7777
+@runId = da680f60-11cf-47a8-9f7b-6f040712f196
+@toolCallId = fc_08fcec4a7403d0170069800cf3f76081968afd06038b259278
+
+### 1. Send a request that requires confirmation
+# The response will have status: "paused" with tools awaiting confirmation
+POST {{baseUrl}}/agents/data_manager/runs
+Content-Type: application/x-www-form-urlencoded
+
+message=Delete 50 old records from the users table&user_id=test_user&session_id=test_session
+
+### 2. Continue with approval (use the run_id and tool_call_id from response)
+POST {{baseUrl}}/agents/data_manager/runs/{{runId}}/continue
+Content-Type: application/x-www-form-urlencoded
+
+tools=[{"tool_call_id": "{{toolCallId}}", "tool_name": "delete_records", "tool_args": {"table_name": "users", "count": 50}, "confirmed": true}]&session_id=test_session&user_id=test_user&stream=false

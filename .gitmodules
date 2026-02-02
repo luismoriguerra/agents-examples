@@ -1,3 +1,6 @@
 [submodule "git_subprojects/mcp-server-browserbase"]
 	path = git_subprojects/mcp-server-browserbase
 	url = https://github.com/browserbase/mcp-server-browserbase.git
+[submodule "git_subprojects/ag-ui"]
+	path = git_subprojects/ag-ui
+	url = https://github.com/ag-ui-protocol/ag-ui.git
